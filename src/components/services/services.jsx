@@ -74,7 +74,7 @@ const ServicesSection = () => {
             alt="Hotel Reservation"
           />
           <div className="flex flex-col gap-y-3 text-mid-night-blue ">
-            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
+            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] ">
               02
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
@@ -135,7 +135,7 @@ const ServicesSection = () => {
             alt="Hotel Reservation"
           />
           <div className="flex flex-col gap-y-3 text-mid-night-blue ">
-            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
+            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] ">
               04
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
@@ -196,7 +196,7 @@ const ServicesSection = () => {
             alt="Hotel Reservation"
           />
           <div className="flex flex-col gap-y-3 text-mid-night-blue ">
-            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
+            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] ">
               06
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
@@ -257,7 +257,7 @@ const ServicesSection = () => {
             alt="Hotel Reservation"
           />
           <div className="flex flex-col gap-y-3 text-mid-night-blue ">
-            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
+            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-[montserrat] rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] ">
               08
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
