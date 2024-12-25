@@ -1,0 +1,47 @@
+{
+    "header.phone": "966 54 628 3111",
+    "header.location": "Al Noor Industrial Area, Riyadh",
+    "header.language.english": "English",
+    "header.language.arabic": "Arabic",
+    "hero.title.part1": "Your Gateway to",
+    "hero.title.part2": "World Adventure",
+    "nav.home": "Home",
+    "nav.services": "Service",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    
+    "servicesTittle": "Services by FATEH",
+    "servicesDescription1": "Elevate your travel experience with our comprehensive and efficient solutions. We leverage",
+    "servicesDescription2": "a wide range of travel services, all aimed at making your travel journey smooth and enjoyable.",
+    "servicesBox1Heading1": "International And Domestic",
+    "servicesBox1Heading2": "Flight Tickets",
+    "servicesBoxDescription": "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta.",
+    "servicesBoxButton": "Get Started",
+    "servicesBox2Heading1": "Hotel Reservation",
+    "servicesBox2Heading2": "World Wide",
+
+    "aboutTittle": "About",
+    "aboutDescription1":"Fateh Al Mustaqbil is a one-of-a-kind travel agency designed to cater to the interests of travelers across the globe, founded in 2023 in Riyadh, Saudi Arabia. Our expertise lies in crafting exceptional journeys tailored to each client's unique requirements, whether it be ticketing, hotel bookings, or visa assistance. With competitive pricing and access to superior consulting services, we have become the favored choice among travelers. Fateh Al Mustaqbil plays a pivotal role in shaping the landscape of travel and tour services not only within the Kingdom of Saudi Arabia but also on a global scale.",
+    "aboutDescription2":"Welcome to Fateh Al Mustaqbil, where we advocate exploring the world one adventure at a time. Come, be a part of this remarkable journey, and together, let's craft experiences that transcend time and place.",
+
+    "contactTittle": "Contact Us",
+    "contactName": "Name",
+    "contactEmail": "Email",
+    "contactPhone1": "Phone Number",
+    "contactService": "Service Required",
+    "contactDescription": "Description",
+    "conatctButton": "Send",
+    "contactTime1": "Timmings",
+    "contactTime2": "Sunday - Thursday",
+    "contactTime3": "9:00 AM - 6:00 PM",
+    "contactMail": "contact@fatehtour.com",
+    "contactLocation": "Haye Al Mansoura, Riyadh",
+    "contactAddressTitle": "You can directly reach to us",
+    "contactPhone2": "011 200 4951",
+    "contactCurrentLocation": "Currently Operation in",
+    "contactCountry": "Saudi Arabia",
+
+
+    "footer.copyRight": "All right reserved for 2024"
+  }
+  

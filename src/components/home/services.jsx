@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 
 // import pictures
 import Tickets from "../../assets/images/home_page/aero_plan2x.png";

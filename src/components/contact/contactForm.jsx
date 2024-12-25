@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 
 // import pictures
 import bgStylePic1 from "../../assets/images/services_page/Component 32 – 12@2x.png";
@@ -25,10 +26,8 @@ const ContactForm = () => {
       <h1
         className="about-text text-4xl xl:text-[55px] ltr:font-[cooper] rtl:font-bold rtl:font-[Cooper] mb-8 relative !z-10"
         style={{ fontFamily: "Cooper" }}
-        data-en="Contact Us"
-        data-ar="اتصل بنا"
       >
-        Contact Us
+        <FormattedMessage id="contactTittle" />
       </h1>
       <section className="flex flex-col gap-y-6 w-full px-4 sm:px-0 sm:w-4/5 lg:w-[750px] relative !z-10">
         <form className="ant-form ant-form-vertical css-xu9wm8 flex flex-col gap-y-3 md:grid md:grid-cols-2 bg-white px-6 py-9 gap-5 ltr:font-gabriola rtl:font-kufam rounded-xl">
@@ -39,12 +38,8 @@ const ContactForm = () => {
                 <label htmlFor="name" title="">
                   <div className="flex items-center gap-x-1">
                     <span className="text-secondary">
-                      <span
-                        className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl"
-                        data-en="Name"
-                        data-ar="اسم"
-                      >
-                        Name
+                      <span className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
+                        <FormattedMessage id="contactName" />
                       </span>
                     </span>
                   </div>
@@ -72,12 +67,8 @@ const ContactForm = () => {
                 <label htmlFor="email" title="">
                   <div className="flex items-center gap-x-1">
                     <span className="text-secondary">
-                      <span
-                        className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl"
-                        data-en="Email"
-                        data-ar="بريد إلكتروني"
-                      >
-                        Email
+                      <span className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
+                        <FormattedMessage id="contactEmail" />
                       </span>
                     </span>
                   </div>
@@ -105,12 +96,8 @@ const ContactForm = () => {
                 <label htmlFor="name" title="">
                   <div className="flex items-center gap-x-1">
                     <span className="text-secondary">
-                      <span
-                        className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl"
-                        data-en="Name"
-                        data-ar="اسم"
-                      >
-                        Phone Number
+                      <span className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
+                        <FormattedMessage id="contactPhone1" />
                       </span>
                     </span>
                   </div>
@@ -138,12 +125,8 @@ const ContactForm = () => {
                 <label htmlFor="name" title="">
                   <div className="flex items-center gap-x-1">
                     <span className="text-secondary">
-                      <span
-                        className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl"
-                        data-en="Name"
-                        data-ar="اسم"
-                      >
-                        Services Required
+                      <span className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
+                        <FormattedMessage id="contactService" />
                       </span>
                     </span>
                   </div>
@@ -171,12 +154,8 @@ const ContactForm = () => {
                 <label htmlFor="name" title="">
                   <div className="flex items-center gap-x-1">
                     <span className="text-secondary">
-                      <span
-                        className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl"
-                        data-en="Name"
-                        data-ar="اسم"
-                      >
-                        Description
+                      <span className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
+                        <FormattedMessage id="contactDescription" />
                       </span>
                     </span>
                   </div>
@@ -204,36 +183,26 @@ const ContactForm = () => {
             <button
               type="submit"
               className="about-text ant-btn css-xu9wm8 border border-[#BD9C00] text-[#bd9c00] w-28 rounded-sm opacity-100 ant-btn-default secondary-btn rtl:text-base rtl:md:text-lg rtl:xl:text-xl text-[22px] ltr:font-[gabriola] rtl:font-[kufam]"
-              data-en="Send"
-              data-ar="یرسل"
             >
-              Send
+              <FormattedMessage id="conatctButton" />
             </button>
           </div>
         </form>
         <div className="flex flex-col gap-y-12 sm:flex-row items-center justify-between ltr:font-[gabriola] rtl:font-kufam mt-6">
           <div className="flex flex-col items-center justify-center sm:items-start gap-y-6">
-            <h1
-              className="about-text rtl:text-[27px] rtl:font-bold rtl:xl:text-[28px] text-[29px] xl:text-[32px]"
-              data-en="Timings"
-              data-ar="التوقيتات"
-            >
-              Timings
+            <h1 className="about-text rtl:text-[27px] rtl:font-bold rtl:xl:text-[28px] text-[29px] xl:text-[32px]">
+              <FormattedMessage id="contactTime1" />
             </h1>
             <div className="flex flex-col rtl:text-xl rtl:xl:text-2xl text-[24px] xl:text-[28px] rtl:leading-10 leading-6">
-              <span
-                className="about-text"
-                data-en="Sunday - Thursday"
-                data-ar="الأحد الخميس"
-              >
-                Sunday - Thursday
+              <span className="about-text">
+                <FormattedMessage id="contactTime2" />
               </span>
               <span
                 className="about-text"
                 data-en="9:00 am - 6:00pm"
                 data-ar="9:00 صباحًا - 6:00 مساءً"
               >
-                9:00 am - 6:00pm
+                <FormattedMessage id="contactTime3" />
               </span>
             </div>
           </div>
@@ -277,7 +246,9 @@ const ContactForm = () => {
                   </g>
                 </g>
               </svg>
-              <span>contact@fatehtour.com</span>
+              <span>
+                <FormattedMessage id="contactMail" />
+              </span>
             </div>
             <div className="flex items-center gap-x-6 rtl:text-base text-xl">
               <svg
@@ -325,7 +296,7 @@ const ContactForm = () => {
                   data-en="Haye Al Mansoura, Riyadh"
                   data-ar="حي المنصورة، الرياض"
                 >
-                  Haye Al Mansoura, Riyadh
+                  <FormattedMessage id="contactLocation" />
                 </span>
               </div>
             </div>

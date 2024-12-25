@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 // import pictures
 import footerLogo from "../../assets/images/home_page/Footer_LOGO@2x.png";
@@ -9,10 +10,18 @@ const Footer = () => {
     <footer className="bg-black flex flex-col gap-8 items-center justify-center pt-20 pb-10 font-[Gabriola] rtl:font-semibold rtl:font-kufam">
       <img className="w-52 h-auto" src={footerLogo} alt="Footer Logo Logo" />
       <div className="flex items-center gap-x-12 text-white rtl:text-base rtl:md:text-xl text-xl">
-        <Link to="/">Home</Link>
-        <Link to="/services">Service</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/">
+          <FormattedMessage id="nav.home" />
+        </Link>
+        <Link to="/services">
+          <FormattedMessage id="nav.services" />
+        </Link>
+        <Link to="/about">
+          <FormattedMessage id="nav.about" />
+        </Link>
+        <Link to="/contact">
+          <FormattedMessage id="nav.contact" />
+        </Link>
       </div>
       <div className="flex items-center gap-x-10">
         <a
@@ -77,7 +86,7 @@ const Footer = () => {
         </a>
       </div>
       <section className="text-[#979797] rtl:text-sm text-lg">
-        All right reserved for 2024
+        <FormattedMessage id="footer.copyRight" />
       </section>
     </footer>
   );
