@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* src/index.css */
+
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="ltr"] {
+  direction: ltr;
+}
+
+/* src/index.css */
+
+/* Padding and Margin Logical Properties */
+[dir="rtl"] .pr-start {
+  padding-right: var(--tw-padding-start);
+}
+[dir="rtl"] .pl-start {
+  padding-left: var(--tw-padding-start);
+}
+[dir="rtl"] .ml-end {
+  margin-left: var(--tw-margin-end);
+}
+[dir="rtl"] .mr-end {
+  margin-right: var(--tw-margin-end);
+}
+
+[dir="ltr"] .pr-start {
+  padding-left: var(--tw-padding-start);
+}
+[dir="ltr"] .pl-start {
+  padding-right: var(--tw-padding-start);
+}
+[dir="ltr"] .ml-end {
+  margin-right: var(--tw-margin-end);
+}
+[dir="ltr"] .mr-end {
+  margin-left: var(--tw-margin-end);
+}
