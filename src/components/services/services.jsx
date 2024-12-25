@@ -1,5 +1,6 @@
 //import React from "react";
 // import pictures
+import { FormattedMessage } from "react-intl";
 
 import bgStylePic1 from "../../assets/images/services_page/Component 33 – 12@2x.png";
 import bgStylePic2 from "../../assets/images/services_page/Component 32 – 12@2x.png";
@@ -20,16 +21,16 @@ const ServicesSection = () => {
         className="absolute left-0 top-0 h-10 w-10 md:h-20 md:w-20"
       />
       <h1 className="text-[34px] md:text-[40px] ltr:font-[cooper] rtl:font-bold rtl:font-kufam relative !z-10">
-        Services by FATEH
+        <FormattedMessage id="servicesTittle" />
       </h1>
       <div className="relative !z-10 flex flex-col rtl:text-lg rtl:lg:text-xl ltr:text-[20px] text-center ltr:lg:text-[26px] ltr:font-[gabriola] rtl:font-kufam text-dark-gray rtl:!leading-8 leading-8">
         <span>
-          Elevate your travel experience with our comprehensive and efficient
-          solutions. We leverage
+          <FormattedMessage id="servicesDescription1" />
         </span>
         <span>
-          a wide range of travel services, all aimed at making your travel
-          journey smooth and enjoyable.
+          <span>
+            <FormattedMessage id="servicesDescription2" />
+          </span>
         </span>
       </div>
 
@@ -46,20 +47,19 @@ const ServicesSection = () => {
               01
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
-              <h1>International And Domestic</h1>
-              <h1>Flight Tickets</h1>
+              <h1>
+                <FormattedMessage id="servicesBox1Heading1" />
+              </h1>
+              <h1><FormattedMessage id="servicesBox1Heading2" /></h1>
             </div>
             <p className="ltr:font-[gabriola] rtl:font-kufam text-xl xl:text-[22px] rtl:text-base rtl:sm:text-lg rtl:xl:text-lg leading-5 ltr:lg:!leading-9 rtl:leading-10 rtl:lg:!leading-loose">
-              Vivamus magna justo, lacinia eget consectetur sed, convallis at
-              tellus. Vestibulum ante ipsum primis in faucibus orci luctus et
-              ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet
-              aliquam vel, ullamcorper sit amet ligula.
+            <FormattedMessage id="servicesBoxDescription" />
             </p>
             <button
               type="button"
               className="primary-btn bg-[#daa520] text-white px-5 py-2 text-lg rounded font-gabriola w-[139px] h-[46px] hover:bg-[#b8860b]"
             >
-              Get Started
+              <FormattedMessage id="servicesBoxButton" />
             </button>
           </div>
         </div>
@@ -76,20 +76,17 @@ const ServicesSection = () => {
               02
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
-              <h1>Hotel Reservation</h1>
-              <h1>World Wide</h1>
+              <h1><FormattedMessage id="servicesBox2Heading1" /></h1>
+              <h1><FormattedMessage id="servicesBox2Heading2" /></h1>
             </div>
             <p className="ltr:font-[gabriola] rtl:font-kufam text-xl xl:text-[22px] rtl:text-base rtl:sm:text-lg rtl:xl:text-lg leading-5 ltr:lg:!leading-9 rtl:leading-10 rtl:lg:!leading-loose">
-              Vivamus magna justo, lacinia eget consectetur sed, convallis at
-              tellus. Vestibulum ante ipsum primis in faucibus orci luctus et
-              ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet
-              aliquam vel, ullamcorper sit amet ligula.
+            <FormattedMessage id="servicesBoxDescription" />
             </p>
             <button
               type="button"
               className="primary-btn bg-[#daa520] text-white px-5 py-2 text-lg rounded font-gabriola w-[139px] h-[46px] hover:bg-[#b8860b]"
             >
-              Get Started
+              <FormattedMessage id="servicesBoxButton" />
             </button>
           </div>
         </div>

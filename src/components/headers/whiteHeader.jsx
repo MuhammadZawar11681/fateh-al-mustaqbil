@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/home_page/FATEH LOGO@2x.png";
 
@@ -45,7 +46,7 @@ const WhiteHeader = () => {
         {/* Navigation Links (Visible on medium and larger screens) */}
         <nav className="hidden md:flex flex-col md:flex-row items-start md:items-center md:justify-between w-full md:w-auto space-y-4 md:space-y-0 md:space-x-[48px] text-[16px] sm:text-[14px] text-[#646464] opacity-1 px-[5px]">
           <Link to="/" className="active text-[#f65934] relative m-5">
-            Home
+            <FormattedMessage id="nav.home" />
             {/* Active Indicator */}
             <span
               className="absolute bottom-[-21px] left-1/2 transform -translate-x-1/2 w-[21px] h-[8px] bg-[#f65934] mb-2"
@@ -55,13 +56,13 @@ const WhiteHeader = () => {
             ></span>
           </Link>
           <Link to="/services" className="btn-pdn">
-            Services
+            <FormattedMessage id="nav.services" />
           </Link>
           <Link to="/about" className="btn-pdn">
-            About
+            <FormattedMessage id="nav.about" />
           </Link>
           <Link to="/contact" className="btn-pdn">
-            Contact
+            <FormattedMessage id="nav.contact" />
           </Link>
         </nav>
       </div>
