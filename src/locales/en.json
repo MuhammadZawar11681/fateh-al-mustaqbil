@@ -5,6 +5,10 @@
     "header.language.arabic": "Arabic",
     "hero.title.part1": "Your Gateway to",
     "hero.title.part2": "World Adventure",
+    
+    "homeServicesH1": "International And",
+    "homeServicesH2": "Domestic Flight Tickets",
+    
     "nav.home": "Home",
     "nav.services": "Service",
     "nav.about": "About",
@@ -30,7 +34,7 @@
     "contactPhone1": "Phone Number",
     "contactService": "Service Required",
     "contactDescription": "Description",
-    "conatctButton": "Send",
+    "conatctButton": "Send", 
     "contactTime1": "Timmings",
     "contactTime2": "Sunday - Thursday",
     "contactTime3": "9:00 AM - 6:00 PM",
