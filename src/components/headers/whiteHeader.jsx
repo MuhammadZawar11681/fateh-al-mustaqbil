@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/images/home_page/FATEH LOGO@2x.png";
 
 const WhiteHeader = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const location = useLocation();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -45,24 +47,70 @@ const WhiteHeader = () => {
 
         {/* Navigation Links (Visible on medium and larger screens) */}
         <nav className="hidden md:flex flex-col md:flex-row items-start md:items-center md:justify-between w-full md:w-auto space-y-4 md:space-y-0 md:space-x-[48px] text-[16px] sm:text-[14px] text-[#646464] opacity-1 px-[5px]">
-          <Link to="/" className="active text-[#f65934] relative m-5 rtl:ml-8">
+          <Link
+            to="/"
+            className={`relative m-5 rtl:ml-8 ${
+              location.pathname === "/" ? "text-[#f65934]" : ""
+            }`}
+          >
             <FormattedMessage id="nav.home" />
             {/* Active Indicator */}
-            <span
-              className="absolute bottom-[-21px] left-1/2 transform -translate-x-1/2 w-[21px] h-[8px] bg-[#f65934] mb-2"
-              style={{
-                clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
-              }}
-            ></span>
+            {location.pathname === "/" && (
+              <span
+                className="absolute bottom-[-21px] left-1/2 transform -translate-x-1/2 w-[21px] h-[8px] bg-[#f65934] mb-2"
+                style={{
+                  clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
+                }}
+              ></span>
+            )}
           </Link>
-          <Link to="/services" className="btn-pdn">
+          <Link
+            to="/services"
+            className={`relative m-5 rtl:ml-8 ${
+              location.pathname === "/services" ? "text-[#f65934]" : ""
+            }`}
+          >
             <FormattedMessage id="nav.services" />
+            {location.pathname === "/services" && (
+              <span
+                className="absolute bottom-[-21px] left-1/2 transform -translate-x-1/2 w-[21px] h-[8px] bg-[#f65934] mb-2"
+                style={{
+                  clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
+                }}
+              ></span>
+            )}
           </Link>
-          <Link to="/about" className="btn-pdn">
+          <Link
+            to="/about"
+            className={`relative m-5 rtl:ml-8 ${
+              location.pathname === "/about" ? "text-[#f65934]" : ""
+            }`}
+          >
             <FormattedMessage id="nav.about" />
+            {location.pathname === "/about" && (
+              <span
+                className="absolute bottom-[-21px] left-1/2 transform -translate-x-1/2 w-[21px] h-[8px] bg-[#f65934] mb-2"
+                style={{
+                  clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
+                }}
+              ></span>
+            )}
           </Link>
-          <Link to="/contact" className="btn-pdn">
+          <Link
+            to="/contact"
+            className={`relative m-5 rtl:ml-8 ${
+              location.pathname === "/contact" ? "text-[#f65934]" : ""
+            }`}
+          >
             <FormattedMessage id="nav.contact" />
+            {location.pathname === "/contact" && (
+              <span
+                className="absolute bottom-[-21px] left-1/2 transform -translate-x-1/2 w-[21px] h-[8px] bg-[#f65934] mb-2"
+                style={{
+                  clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
+                }}
+              ></span>
+            )}
           </Link>
         </nav>
       </div>
