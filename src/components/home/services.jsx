@@ -13,85 +13,85 @@ const services = [
     overlayImgSrc: ticketLogo,
     alt: "Flight Tickets",
     text: [
-      { en: "International And", ar: "الرحلات الدولية" },
-      { en: "Domestic Flight Tickets", ar: "وتذاكر الطيران المحلية" },
+      <FormattedMessage key="homeServices1T1" id="homeServices1T1" />,
+      <FormattedMessage key="homeServices1T2" id="homeServices1T2" />,
     ],
   },
   {
     href: "/services",
     imgSrc: booksPic,
-    overlayImgSrc: "./assets/images/home_page/Union 10@2x.png",
+    overlayImgSrc: ticketLogo,
     alt: "Hotel Reservation",
     text: [
-      { en: "Hotel Reservation", ar: "حجوزات الفنادق" },
-      { en: "World Wide", ar: "في جميع أنحاء العالم" },
+      <FormattedMessage key="homeServices2T1" id="homeServices2T1" />,
+      <FormattedMessage key="homeServices2T2" id="homeServices2T2" />,
     ],
   },
   {
     href: "/services",
-    imgSrc: "./assets/images/home_page/laptop@2x.png",
-    overlayImgSrc: "./assets/images/home_page/world@2x.png",
+    imgSrc: Tickets,
+    overlayImgSrc: ticketLogo,
     alt: "Visa Services",
     text: [
-      { en: "Visa", ar: "خدمات التأشيرات" },
-      { en: "Services", ar: "خدمات" },
+      <FormattedMessage key="homeServices3T1" id="homeServices3T1" />,
+      <FormattedMessage key="homeServices3T2" id="homeServices3T2" />,
     ],
   },
   {
     href: "/services",
-    imgSrc: "./assets/images/home_page/card@2x.png",
-    overlayImgSrc: "./assets/images/home_page/Union 3@2x.png",
+    imgSrc: Tickets,
+    overlayImgSrc: ticketLogo,
     alt: "Driving License",
     text: [
-      { en: "International", ar: "رخصة القيادة" },
-      { en: "Driving License", ar: "الدولية" },
+      <FormattedMessage key="homeServices4T1" id="homeServices4T1" />,
+      <FormattedMessage key="homeServices4T2" id="homeServices4T2" />,
     ],
   },
   {
     href: "/services",
-    imgSrc: "./assets/images/home_page/plan@2x.png",
-    overlayImgSrc: "./assets/images/home_page/Union 4@2x.png",
+    imgSrc: Tickets,
+    overlayImgSrc: ticketLogo,
     alt: "Airport VIP Services",
     text: [
-      { en: "Airport VIP Services", ar: "خدمات كبار الشخصيات بالمطار" },
-      { en: "(Meet & Greet)", ar: "(الاستقبال والترحيب)" },
+      <FormattedMessage key="homeServices5T1" id="homeServices5T1" />,
+      <FormattedMessage key="homeServices5T2" id="homeServices5T2" />,
     ],
   },
   {
     href: "/services",
-    imgSrc: "./assets/images/home_page/hand@2x.png",
-    overlayImgSrc: "./assets/images/home_page/Union 5@2x.png",
+    imgSrc: Tickets,
+    overlayImgSrc: ticketLogo,
     alt: "House Maid Services",
     text: [
-      { en: "House Maid", ar: "خدمات الخادمات" },
-      { en: "Transportation", ar: "النقل" },
+      <FormattedMessage key="homeServices6T1" id="homeServices6T1" />,
+      <FormattedMessage key="homeServices6T2" id="homeServices6T2" />,
     ],
   },
   {
     href: "/services",
-    imgSrc: "./assets/images/home_page/city@2x.png",
-    overlayImgSrc: "./assets/images/home_page/Union 6@2x.png",
+    imgSrc: Tickets,
+    overlayImgSrc: ticketLogo,
     alt: "Tourism Packages",
     text: [
-      { en: "Tourism", ar: "حزم السياحة" },
-      { en: "Packages", ar: "العروض" },
+      <FormattedMessage key="homeServices7T1" id="homeServices7T1" />,
+      <FormattedMessage key="homeServices7T2" id="homeServices7T2" />,
     ],
   },
   {
     href: "/services",
-    imgSrc: "./assets/images/home_page/Kaaba@2x.png",
-    overlayImgSrc: "./assets/images/home_page/Union 7@2x.png",
+    imgSrc: Tickets,
+    overlayImgSrc: ticketLogo,
     alt: "Umrah & Ziyara Services",
     text: [
-      { en: "Umrah & Ziyara", ar: "خدمات العمرة والزيارة" },
-      { en: "Services", ar: "خدمات" },
+      <FormattedMessage key="homeServices8T1" id="homeServices8T1" />,
+      <FormattedMessage key="homeServices8T2" id="homeServices8T2" />,
     ],
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section className="services flex flex-wrap justify-center gap-5 p-5 mt-8 mb-14 font-[gabriola] text-xl text-white">
+    <section className="services flex flex-wrap justify-center gap-5 p-5 mt-8 mb-14 font-[gabriola] text-xl text-white rtl:font-[kufam]">
       {services.map((service, index) => (
         <a
           key={index}
@@ -109,14 +109,12 @@ const ServicesSection = () => {
               alt={service.alt + " overlay"}
               className="w-[48px] h-[48px] mb-2 "
             />
-            {service.text.map((line, idx) => (
+            {service.text.map((line) => (
               <span
-                key={idx}
+                key={line.key}
                 className="text_styling block leading-[24px]"
-                data-en={line.en}
-                data-ar={line.ar}
               >
-                {line.en}
+                {line}
               </span>
             ))}
           </div>
