@@ -9,7 +9,7 @@ import services2 from "../../assets/images/services_page/Rectangle 1118-3@2x.png
 
 const ServicesSection = () => {
   return (
-    <section className="relative overflow-hidden z-0 flex flex-col items-center gap-y-1 justify-center px-8 font-[gabriola] pt-10">
+    <section className="relative overflow-hidden z-0 flex flex-col items-center gap-y-1 justify-center px-8 font-[gabriola] pt-10 rtl:font-[kufam]">
       <img
         src={bgStylePic1}
         alt="Background Right"
@@ -34,7 +34,7 @@ const ServicesSection = () => {
         </span>
       </div>
 
-      <div className="flex flex-col gap-y-20 xl:px-32 mb-16 px-8 md:px-0 relative !z-50 ">
+      <div className="flex flex-col gap-y-20 xl:px-32 mb-16 px-8 md:px-0 relative !z-50 mt-10">
         {/* Service 1 */}
         <div className="flex items-start md:items-center flex-col md:flex-row gap-y-6 sm:gap-y-12 md:gap-x-12 xl:gap-x-32">
           <img
@@ -43,17 +43,19 @@ const ServicesSection = () => {
             alt="International And Domestic Flight Tickets"
           />
           <div className="flex flex-col gap-y-3 text-mid-night-blue">
-            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-montserrat rtl:font-kufam rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
+            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-montserrat rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
               01
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
               <h1>
                 <FormattedMessage id="servicesBox1Heading1" />
               </h1>
-              <h1><FormattedMessage id="servicesBox1Heading2" /></h1>
+              <h1>
+                <FormattedMessage id="servicesBox1Heading2" />
+              </h1>
             </div>
             <p className="ltr:font-[gabriola] rtl:font-kufam text-xl xl:text-[22px] rtl:text-base rtl:sm:text-lg rtl:xl:text-lg leading-5 ltr:lg:!leading-9 rtl:leading-10 rtl:lg:!leading-loose">
-            <FormattedMessage id="servicesBoxDescription" />
+              <FormattedMessage id="servicesBoxDescription" />
             </p>
             <button
               type="button"
@@ -71,16 +73,20 @@ const ServicesSection = () => {
             src={services2}
             alt="Hotel Reservation"
           />
-          <div className="flex flex-col gap-y-3 text-mid-night-blue">
-            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-montserrat rtl:font-kufam rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
+          <div className="flex flex-col gap-y-3 text-mid-night-blue ">
+            <span className="text-4xl lg:text-5xl rtl:font-bold xl:text-[60px] font-montserrat rtl:font-[kufam] rtl:text-golden-dark/60 text-[#bd9c0080] font-[General]">
               02
             </span>
             <div className="flex flex-col text-2xl lg:text-[30px] font-bold rtl:text-xl rtl:lg:text-[28px] xl:text-[36px] ltr:font-[cooper] rtl:font-kufam rtl:leading-9 lg:gap-y-4">
-              <h1><FormattedMessage id="servicesBox2Heading1" /></h1>
-              <h1><FormattedMessage id="servicesBox2Heading2" /></h1>
+              <h1>
+                <FormattedMessage id="servicesBox2Heading1" />
+              </h1>
+              <h1>
+                <FormattedMessage id="servicesBox2Heading2" />
+              </h1>
             </div>
             <p className="ltr:font-[gabriola] rtl:font-kufam text-xl xl:text-[22px] rtl:text-base rtl:sm:text-lg rtl:xl:text-lg leading-5 ltr:lg:!leading-9 rtl:leading-10 rtl:lg:!leading-loose">
-            <FormattedMessage id="servicesBoxDescription" />
+              <FormattedMessage id="servicesBoxDescription" />
             </p>
             <button
               type="button"

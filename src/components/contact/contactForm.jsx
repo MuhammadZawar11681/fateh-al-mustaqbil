@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { FormattedMessage } from "react-intl";
 
 // import pictures
@@ -23,14 +23,11 @@ const ContactForm = () => {
           viewBox="0 0 76.151 77.833"
         ></svg>
       </span>
-      <h1
-        className="about-text text-4xl xl:text-[55px] ltr:font-[cooper] rtl:font-bold rtl:font-[Cooper] mb-8 relative !z-10"
-        style={{ fontFamily: "Cooper" }}
-      >
+      <h1 className="about-text text-4xl xl:text-[55px] ltr:font-[cooper] rtl:font-bold rtl:font-[kufam] mb-8 relative !z-10 ">
         <FormattedMessage id="contactTittle" />
       </h1>
       <section className="flex flex-col gap-y-6 w-full px-4 sm:px-0 sm:w-4/5 lg:w-[750px] relative !z-10">
-        <form className="ant-form ant-form-vertical css-xu9wm8 flex flex-col gap-y-3 md:grid md:grid-cols-2 bg-white px-6 py-9 gap-5 ltr:font-gabriola rtl:font-kufam rounded-xl">
+        <form className="ant-form ant-form-vertical css-xu9wm8 flex flex-col gap-y-3 md:grid md:grid-cols-2 bg-white px-6 py-9 gap-5 ltr:font-gabriola rtl:font-[kufam] rounded-xl">
           {/* Name Input */}
           <div className="ant-form-item !mb-0 css-xu9wm8">
             <div className="ant-row ant-form-item-row css-xu9wm8">
@@ -38,7 +35,7 @@ const ContactForm = () => {
                 <label htmlFor="name" title="">
                   <div className="flex items-center gap-x-1">
                     <span className="text-secondary">
-                      <span className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
+                      <span className="about-text ltr:font-gabriola rtl:font-[kufam] rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
                         <FormattedMessage id="contactName" />
                       </span>
                     </span>
@@ -67,7 +64,7 @@ const ContactForm = () => {
                 <label htmlFor="email" title="">
                   <div className="flex items-center gap-x-1">
                     <span className="text-secondary">
-                      <span className="about-text ltr:font-gabriola rtl:font-kufam rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
+                      <span className="about-text ltr:font-gabriola rtl:font-[kufam] rtl:text-sm rtl:md:text-base rtl:xl:text-lg text-xl md:text-lg xl:text-xl">
                         <FormattedMessage id="contactEmail" />
                       </span>
                     </span>
@@ -188,7 +185,7 @@ const ContactForm = () => {
             </button>
           </div>
         </form>
-        <div className="flex flex-col gap-y-12 sm:flex-row items-center justify-between ltr:font-[gabriola] rtl:font-kufam mt-6">
+        <div className="flex flex-col gap-y-12 sm:flex-row items-center justify-between ltr:font-[gabriola] rtl:font-[kufam] mt-6">
           <div className="flex flex-col items-center justify-center sm:items-start gap-y-6">
             <h1 className="about-text rtl:text-[27px] rtl:font-bold rtl:xl:text-[28px] text-[29px] xl:text-[32px]">
               <FormattedMessage id="contactTime1" />
@@ -291,11 +288,7 @@ const ContactForm = () => {
               </svg>
 
               <div className="flex flex-col">
-                <span
-                  className="about-text"
-                  data-en="Haye Al Mansoura, Riyadh"
-                  data-ar="حي المنصورة، الرياض"
-                >
+                <span className="about-text">
                   <FormattedMessage id="contactLocation" />
                 </span>
               </div>

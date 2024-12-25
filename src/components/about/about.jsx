@@ -51,24 +51,16 @@ const About = () => {
       {/* Content */}
       <div className="flex flex-col gap-y-8 md:grid md:grid-cols-2 items-center justify-center md:items-start">
         {/* Text Section */}
-        <div className="flex flex-col gap-y-7 ltr:font-gabriola rtl:font-kufam rtl:text-base rtl:sm:text-lg text-xl rtl:md:text-sm md:text-base lg:text-xl rtl:lg:text-[21px] xl:text-2xl">
-          <h1
-            className="about-text font-[Cooper] text-black font-bold text-[30px] rtl:xl:text-[33px] xl:text-[35px]"
-            
-          >
+        <div className="flex flex-col gap-y-7 ltr:font-gabriola rtl:font-[kufam] rtl:text-base rtl:sm:text-lg text-xl rtl:md:text-sm md:text-base lg:text-xl rtl:lg:text-[21px] xl:text-2xl">
+          <h1 className="about-text font-[Cooper]  rtl:font-[kufam] text-black font-bold text-[30px] rtl:xl:text-[33px] xl:text-[35px]">
             <FormattedMessage id="aboutTittle" />
           </h1>
-          <p
-            className="about-text font-[Gabriola] opacity-100 rtl:leading-10"
-            data-en="Fateh Al Mustaqbil is a one-of-a-kind travel agency designed to cater to the interests of travelers across the globe, founded in 2023 in Riyadh, Saudi Arabia. Our expertise lies in crafting exceptional journeys tailored to each client's unique requirements, whether it be ticketing, hotel bookings, or visa assistance. With competitive pricing and access to superior consulting services, we have become the favored choice among travelers. Fateh Al Mustaqbil plays a pivotal role in shaping the landscape of travel and tour services not only within the Kingdom of Saudi Arabia but also on a global scale."
-            data-ar="فتح المستقبل هي وكالة سفر فريدة من نوعها مصممة لتلبية احتياجات المسافرين في جميع أنحاء العالم، تأسست عام 2023 في الرياض، المملكة العربية السعودية. تكمن خبرتنا في صياغة رحلات استثنائية مصممة خصيصًا لتلبية المتطلبات الفريدة لكل عميل، سواء كانت التذاكر أو حجوزات الفنادق أو المساعدة في الحصول على التأشيرة. بفضل الأسعار التنافسية وإمكانية الوصول إلى الخدمات الاستشارية المتميزة، أصبحنا الخيار المفضل بين المسافرين. يلعب فاتح المستقبل دورًا محوريًا في تشكيل مشهد خدمات السفر والسياحة ليس فقط داخل المملكة العربية السعودية ولكن أيضًا على المستوى العالمي"
-          >
+          <p className="about-text font-[Gabriola] opacity-100 rtl:leading-10 rtl:font-[kufam]">
             <FormattedMessage id="aboutDescription1" />
           </p>
           <p
-            className="about-text font-[Gabriola] opacity-100 rtl:leading-10"
-            data-en="Welcome to Fateh Al Mustaqbil, where we advocate exploring the world one adventure at a time. Come, be a part of this remarkable journey, and together, let's craft experiences that transcend time and place."
-            data-ar="مرحبًا بكم في فتح المستقبل، حيث ندعو إلى استكشاف العالم بمغامرة واحدة في كل مرة. تعال وكن جزءًا من هذه الرحلة الرائعة، ولنصنع معًا تجارب تتجاوز الزمان والمكان."
+            className="about-text font-[Gabriola] opacity-100 rtl:leading-10 rtl:font-[kufam]"
+            
           >
             <FormattedMessage id="aboutDescription2" />
           </p>

@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
@@ -7,7 +7,7 @@ import footerLogo from "../../assets/images/home_page/Footer_LOGO@2x.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black flex flex-col gap-8 items-center justify-center pt-20 pb-10 font-[Gabriola] rtl:font-semibold rtl:font-kufam">
+    <footer className="bg-black flex flex-col gap-8 items-center justify-center pt-20 pb-10 font-[Gabriola] rtl:font-semibold rtl:font-[kufam]">
       <img className="w-52 h-auto" src={footerLogo} alt="Footer Logo Logo" />
       <div className="flex items-center gap-x-12 text-white rtl:text-base rtl:md:text-xl text-xl">
         <Link to="/">

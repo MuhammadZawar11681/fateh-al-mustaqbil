@@ -17,7 +17,7 @@ const OperationalSection = () => {
           <h1 className="about-text font-[gabriola] text-white opacity-1 ltr:font-[gabriola] rtl:font-[kufam] rtl:text-2xl rtl:md:text-3xl text-3xl text-center">
             <FormattedMessage id="contactCurrentLocation" />
           </h1>
-          <h1 className="about-text font-[cooper] ltr:font-[cooper] rtl:font-bold rtl:font-kufam rtl:text-3xl rtl:md:text-5xl text-5xl text-center">
+          <h1 className="about-text font-[cooper] ltr:font-[cooper] rtl:font-bold rtl:font-[kufam] rtl:text-3xl rtl:md:text-5xl text-5xl text-center">
             <FormattedMessage id="contactCountry" />
           </h1>
         </div>

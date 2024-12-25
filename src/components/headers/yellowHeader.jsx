@@ -99,7 +99,7 @@
 
 // export default YellowHeader;
 
-import React from "react";
+//import React from "react";
 import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 import phoneIcon from "../../assets/images/home_page/phone.png";
@@ -107,15 +107,15 @@ import locationIcon from "../../assets/images/home_page/map-pin@2x.png";
 
 const YellowHeader = ({ onLanguageChange }) => {
   return (
-    <header className="yellow-header bg-gradient-to-r from-[#f6db5a] to-[#bd9c00] text-white py-2 text-[15px] leading-[26px] font-[Gabriola]  md:mx-[49px]">
+    <header className="yellow-header bg-gradient-to-r from-[#f6db5a] to-[#bd9c00] text-white py-2 text-[15px] leading-[26px] font-[Gabriola]  md:mx-[49px] rtl:font-[kufam]">
       <div className="container mx-auto max-w-[1200px]">
-        <div className="hidden md:flex justify-end items-center">
+        <div className="hidden md:flex justify-end items-center md:mx-10">
           {/* Phone */}
           <span className="flex items-center">
             <img
               src={phoneIcon}
               alt="Phone Icon"
-              className="w-[15px] h-[15px] mr-[14px]"
+              className="w-[15px] h-[15px] mr-[14px] rtl:ml-5"
             />
             <span className="phone-text text-[14px]">
               <FormattedMessage id="header.phone" />
