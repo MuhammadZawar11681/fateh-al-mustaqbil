@@ -18,6 +18,7 @@ const WhiteHeader = () => {
   //   }
   // };
 
+  
   // React.useEffect(() => {
   //   window.addEventListener("resize", handleResize);
   //   return () => {
