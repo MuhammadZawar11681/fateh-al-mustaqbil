@@ -50,48 +50,48 @@
 //           </span>
 //         </div>
 
-//         {/* For Small Screens */}
-//         <div className="flex md:hidden flex-wrap justify-between items-center gap-2">
-//           {/* Phone Icon and Text */}
-//           <span className="flex items-center text-[14px] sm:text-[12px]">
-//             <img
-//               src={phoneIcon}
-//               alt="Phone Icon"
-//               className="w-[15px] h-[15px] mr-[8px]"
-//             />
-//             <span className="phone-text">+966 123 456 897</span>
-//           </span>
+// {/* For Small Screens */}
+// <div className="flex md:hidden flex-wrap justify-between items-center gap-2">
+//   {/* Phone Icon and Text */}
+//   <span className="flex items-center text-[14px] sm:text-[12px]">
+//     <img
+//       src={phoneIcon}
+//       alt="Phone Icon"
+//       className="w-[15px] h-[15px] mr-[8px]"
+//     />
+//     <span className="phone-text">+966 123 456 897</span>
+//   </span>
 
-//           {/* Separator (hidden on small screens) */}
-//           <span className="hidden sm:inline-block mx-[8px] w-px bg-white opacity-100"></span>
+//   {/* Separator (hidden on small screens) */}
+//   <span className="hidden sm:inline-block mx-[8px] w-px bg-white opacity-100"></span>
 
-//           {/* Location Icon and Text */}
-//           <span className="flex items-center text-[14px] sm:text-[12px]">
-//             <img
-//               src={locationIcon}
-//               alt="Location Icon"
-//               className="w-[13px] h-[16px]"
-//             />
-//             <span className="location-text mx-[8px]">
-//               Al noor industrial area, Riyadh
-//             </span>
-//           </span>
+//   {/* Location Icon and Text */}
+//   <span className="flex items-center text-[14px] sm:text-[12px]">
+//     <img
+//       src={locationIcon}
+//       alt="Location Icon"
+//       className="w-[13px] h-[16px]"
+//     />
+//     <span className="location-text mx-[8px]">
+//       Al noor industrial area, Riyadh
+//     </span>
+//   </span>
 
-//           {/* Language Selector Dropdown */}
-//           <span>
-//             <select
-//               className="lag-selector bg-[#f65934] rounded-[2px] w-[65px] h-[23px] text-left text-[10px] sm:text-[9px] text-white"
-//               id="language-selector"
-//             >
-//               <option className="bg-white text-black" value="eng">
-//                 English
-//               </option>
-//               <option className="bg-white text-black" value="arb">
-//                 عربی
-//               </option>
-//             </select>
-//           </span>
-//         </div>
+//   {/* Language Selector Dropdown */}
+//   <span>
+//     <select
+//       className="lag-selector bg-[#f65934] rounded-[2px] w-[65px] h-[23px] text-left text-[10px] sm:text-[9px] text-white"
+//       id="language-selector"
+//     >
+//       <option className="bg-white text-black" value="eng">
+//         English
+//       </option>
+//       <option className="bg-white text-black" value="arb">
+//         عربی
+//       </option>
+//     </select>
+//   </span>
+// </div>
 //       </div>
 //     </header>
 //   );
@@ -148,6 +148,48 @@ const YellowHeader = ({ onLanguageChange }) => {
               </option>
               <option value="ar">
                 <FormattedMessage id="header.language.arabic" />
+              </option>
+            </select>
+          </span>
+        </div>
+        {/* For Small Screens */}
+        <div className="flex md:hidden flex-wrap justify-between items-center gap-2">
+          {/* Phone Icon and Text */}
+          <span className="flex items-center text-[14px] sm:text-[12px]">
+            <img
+              src={phoneIcon}
+              alt="Phone Icon"
+              className="w-[15px] h-[15px] mr-[8px]"
+            />
+            <span className="phone-text">+966 123 456 897</span>
+          </span>
+
+          {/* Separator (hidden on small screens) */}
+          <span className="hidden sm:inline-block mx-[8px] w-px bg-white opacity-100"></span>
+
+          {/* Location Icon and Text */}
+          <span className="flex items-center text-[14px] sm:text-[12px]">
+            <img
+              src={locationIcon}
+              alt="Location Icon"
+              className="w-[13px] h-[16px]"
+            />
+            <span className="location-text mx-[8px]">
+              Al noor industrial area, Riyadh
+            </span>
+          </span>
+
+          {/* Language Selector Dropdown */}
+          <span>
+            <select
+              className="lag-selector bg-[#f65934] rounded-[2px] w-[65px] h-[23px] text-left text-[10px] sm:text-[9px] text-white"
+              id="language-selector"
+            >
+              <option className="bg-white text-black" value="eng">
+                English
+              </option>
+              <option className="bg-white text-black" value="arb">
+                عربی
               </option>
             </select>
           </span>
