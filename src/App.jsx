@@ -1,49 +1,18 @@
-// //import React from "react";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// // import components
-// import YellowHeader from "./components/headers/yellowHeader";
-// import WhiteHeader from "./components/headers/whiteHeader";
-// import HomePage from "./components/home/home";
-// import About from "./components/about/about";
-// import ServicesSection from "./components/services/services";
-// import MainForm from "./components/contact/mainContact";
-// import Footer from "./components/footer/footer";
-
-// function App() {
-//   return (
-//     <>
-//       <Router>
-//         <YellowHeader />
-//         <WhiteHeader />
-
-//         <Routes>
-//           <Route path="/" element={<HomePage />} />
-//           <Route path="/services" element={<ServicesSection />} />
-//           <Route path="/about" element={<About />} />
-//           <Route path="/contact" element={<MainForm />} />
-//         </Routes>
-
-//         <Footer />
-//       </Router>
-//     </>
-//   );
-// }
-
-// export default App;
-
-import React, { useState, useEffect } from "react";
+import React, { Suspense, lazy, useState, useEffect } from "react";
 import { IntlProvider } from "react-intl";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import components
+import Loader from "./components/loader/loader";
 import YellowHeader from "./components/headers/yellowHeader";
 import WhiteHeader from "./components/headers/whiteHeader";
-import HomePage from "./components/home/home";
-import About from "./components/about/about";
-import ServicesSection from "./components/services/services";
-import MainForm from "./components/contact/mainContact";
 import Footer from "./components/footer/footer";
+
+// Import components
+const HomePage = lazy(() => import("./components/home/home"));
+const ServicesSection = lazy(() => import("./components/services/services"));
+import About from "./components/about/about";
+import MainForm from "./components/contact/mainContact";
 
 // Import translations
 import messagesEn from "./locales/en.json";
@@ -56,12 +25,18 @@ const messages = {
 
 function App() {
   const [locale, setLocale] = useState("en");
+  const [loading, setLoading] = useState(true);
 
   // Load language preference from localStorage
   useEffect(() => {
     const savedLocale = localStorage.getItem("appLanguage") || "en";
     setLocale(savedLocale);
     document.dir = savedLocale === "ar" ? "rtl" : "ltr";
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 4000);
+    return () => clearTimeout(timer);
   }, []);
 
   // Handle language change
@@ -74,15 +49,23 @@ function App() {
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <Router>
-        <YellowHeader onLanguageChange={handleLanguageChange} />
-        <WhiteHeader />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<ServicesSection />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<MainForm />} />
-        </Routes>
-        <Footer />
+        {loading ? (
+          <Loader loading={loading} />
+        ) : (
+          <>
+            <YellowHeader onLanguageChange={handleLanguageChange} />
+            <WhiteHeader />
+            <Suspense fallback={<Loader loading={true} />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/services" element={<ServicesSection />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<MainForm />} />
+              </Routes>
+            </Suspense>
+            <Footer />
+          </>
+        )}
       </Router>
     </IntlProvider>
   );
