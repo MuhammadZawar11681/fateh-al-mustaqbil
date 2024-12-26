@@ -122,16 +122,16 @@ const WhiteHeader = () => {
         } bg-white shadow-md w-full mt-2 px-4 py-4 space-y-4 flex-col items-start text-[14px] sm:text-[14px] text-[#646464]`}
       >
         <Link to="/" className="text-[#f65934] text-[14px] sm:text-[14px]">
-          Home
+          <FormattedMessage id="nav.home" />
         </Link>
         <Link to="/services" className="text-[14px] sm:text-[14px] text-black">
-          Services
+          <FormattedMessage id="nav.services" />
         </Link>
         <Link to="/about" className="text-[14px] sm:text-[14px] text-black">
-          About
+          <FormattedMessage id="nav.about" />
         </Link>
         <Link to="/contact" className="text-[14px] sm:text-[14px] text-black">
-          Contact
+          <FormattedMessage id="nav.contact" />
         </Link>
       </nav>
     </header>
